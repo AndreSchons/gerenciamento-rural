@@ -16,6 +16,13 @@ public class Crop {
         this.expectedGrowthTime = expectedGrowthTime;
     }
 
+    public Crop(String cropName, String variety, String season, int expectedGrowthTime) {
+        this.cropName = cropName;
+        this.variety = variety;
+        this.season = season;
+        this.expectedGrowthTime = expectedGrowthTime;
+    }
+
     public int getCropId() {
         return cropId;
     }

@@ -3,8 +3,10 @@ bin/
 
 # Bibliotecas externas
 libs/
-
+ 
 # Configurações do VSCode
 .vscode/
 
 README.md
+App.java
+

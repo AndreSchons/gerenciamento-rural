@@ -19,6 +19,13 @@ public class Farmland {
         this.crop = crop;
     }
 
+    public Farmland(String farmlandName, double area, Farm farm, Crop crop) {
+        this.farmlandName = farmlandName;
+        this.area = area;
+        this.farm = farm;
+        this.crop = crop;
+    }
+
     public int getFarmlandId() {
         return farmlandId;
     }
@@ -66,6 +73,4 @@ public class Farmland {
     public void setInputs(List<AgriculturalInputs> inputs) {
         this.inputs = inputs;
     }
-
-    
 }

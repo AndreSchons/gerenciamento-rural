@@ -15,6 +15,26 @@ public class Farm {
         this.farmName = farmName;
         this.location = location;
         this.totalArea = totalArea;
+        calculateArea();
+    }
+
+    
+
+    public Farm(String farmName, String location, List<Farmland> farmlands) {
+        this.farmName = farmName;
+        this.location = location;
+        this.farmlands = farmlands;
+        calculateArea();
+    }
+
+
+
+    public void calculateArea() {
+        this.totalArea = 0;
+        for(Farmland farmland: farmlands) {
+            this.totalArea += farmland.getArea();
+        }
+        setTotalArea(totalArea);
     }
 
     public int getFarmId() {
