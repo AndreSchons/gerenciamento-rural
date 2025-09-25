@@ -16,6 +16,13 @@ public class AgriculturalInputs {
         this.applicationMethod = applicationMethod;
     }
 
+    public AgriculturalInputs(String inputName, String inputType, double quantity, String applicationMethod) {
+        this.inputName = inputName;
+        this.inputType = inputType;
+        this.quantity = quantity;
+        this.applicationMethod = applicationMethod;
+    }
+
     public int getInputId() {
         return inputId;
     }
